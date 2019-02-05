@@ -1,0 +1,27 @@
+@page
+@model CLTeam.Pages.Teams.IndexModel
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>List of Teams</title>
+</head>
+<body>
+<div>
+    <h1><a href="/">Home</a></h1>
+    <ul>
+        @foreach (var team in Model.TeamsList)
+        {
+            <li><a href="~/Teams/View/@(team.Id)">@($"Id: {team.Id} Name: {team.Name}")</a></li>
+        }
+    </ul>
+    <a href="~/AddTeam">Add a New Team</a>
+
+</div>
+</body>
+</html>

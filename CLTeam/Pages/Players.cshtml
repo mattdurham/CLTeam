@@ -1,0 +1,27 @@
+@page
+@using CLTeam.Backend.Models
+@model CLTeam.Pages.Players
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>View the Players</title>
+</head>
+<body>
+<div>
+    <h1><a href="/">Home</a></h1>
+    <ul>
+        @foreach (var player in (IReadOnlyCollection<Player>) this.ViewData["Players"])
+        {
+            <li>@($"Id: {player.Id} Name: {player.Name}")</li>
+        }
+    </ul>
+    <a href="~/AddPlayer">Add a New Player</a>
+</div>
+</body>
+</html>

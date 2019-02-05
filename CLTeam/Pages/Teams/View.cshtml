@@ -1,0 +1,36 @@
+@page "{id:int}"
+@model CLTeam.Pages.Teams.View
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>@Model.Team.Name</title>
+</head>
+<body>
+<div>
+    <h1>@Model.Team.Id</h1>
+    <h1>@Model.Team.Name</h1>
+    <ul>
+        @foreach (var player in Model.Players)
+        {
+            <li>@($"Id: {player.Id} Name: {player.Name}")</li>
+        }
+    </ul>
+    <h2>Add Player to team</h2>
+    <form method="post">
+        <select name="player">
+        @foreach (var player in Model.PlayersNotOnTeam)
+        {
+            <option value="@player.Id">@player.Name</option>
+        }
+        </select>
+        <input type="submit" value="Submit">
+    </form>
+</div>
+</body>
+</html>

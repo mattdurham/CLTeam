@@ -1,0 +1,1 @@
+{"Games":[{"Team1Id":1,"Team1Score":3,"Team2Id":2,"Team2Score":4,"Id":1}],"Players":[{"Name":"Matt Durham","Id":1},{"Name":"Bob Marley","Id":2},{"Name":"Robert Deniro","Id":3}],"Teams":[{"Name":"The Raiders","Players":[1,2,3],"Id":1},{"Name":"Painters","Players":[2],"Id":2}]}
