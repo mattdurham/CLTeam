@@ -1,8 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CLTeam", "CLTeam\CLTeam.csproj", "{56D7A9A8-C3A3-473F-B97D-06DB2A818D3C}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebCLTeam", "WebCLTeam\WebCLTeam.csproj", "{2CF83EF8-8CFA-4FDA-9E25-28112268F91C}"
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CLTeam", "CLTeam\CLTeam.csproj", "{56D7A9A8-C3A3-473F-B97D-06DB2A818D3C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +15,11 @@ Global
 		{56D7A9A8-C3A3-473F-B97D-06DB2A818D3C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{56D7A9A8-C3A3-473F-B97D-06DB2A818D3C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{56D7A9A8-C3A3-473F-B97D-06DB2A818D3C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{2CF83EF8-8CFA-4FDA-9E25-28112268F91C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2CF83EF8-8CFA-4FDA-9E25-28112268F91C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2CF83EF8-8CFA-4FDA-9E25-28112268F91C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2CF83EF8-8CFA-4FDA-9E25-28112268F91C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {10556E43-BC12-4FC3-B256-3DBC3B57E7A7}
 	EndGlobalSection
 EndGlobal
